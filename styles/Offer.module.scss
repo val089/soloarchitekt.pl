@@ -1,0 +1,24 @@
+.offer {
+  padding-top: 60px;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &_content {
+    margin-bottom: 40px;
+  }
+
+  &_mainTitle {
+    font-size: 4.4rem;
+    max-width: 480px;
+    width: 100%;
+  }
+
+  &_mainDescription {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+}

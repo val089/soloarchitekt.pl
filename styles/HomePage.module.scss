@@ -1,0 +1,52 @@
+@use './variables';
+@use './mixins';
+
+.home_introSection {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 1fr 382px;
+  grid-template-areas:
+    'mainText infoText'
+    'mainImg mainImg';
+}
+
+.home_mainImg {
+  object-fit: cover;
+  grid-area: mainImg;
+}
+
+.home_mainText {
+  grid-area: mainText;
+
+  h2 {
+    font-size: 4.4rem;
+    max-width: 650px;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.home_mainInfo {
+  grid-area: 'mainInfo';
+}
+
+.home_mainInfoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-size: 4.4rem;
+    color: variables.$light-grey-2;
+  }
+
+  p {
+    padding-left: 30px;
+    font-size: 1.4rem;
+  }
+}
