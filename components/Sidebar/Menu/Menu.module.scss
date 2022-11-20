@@ -1,0 +1,24 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.menu {
+  &_item_list {
+    display: flex;
+    flex-direction: column;
+  }
+  &_item {
+    padding: 20px 0;
+  }
+
+  &_link {
+    font-weight: 700;
+    font-size: 2rem;
+    color: variables.$dark-grey;
+    position: relative;
+
+    &:hover,
+    &_active {
+      color: variables.$orange;
+    }
+  }
+}

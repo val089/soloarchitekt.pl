@@ -8,6 +8,20 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../assets/fonts/CenturyGothic/CenturyGothic-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('../assets/fonts/CenturyGothic/CenturyGothic-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -60,13 +74,34 @@ html {
 }
 
 body {
-  background: variables.$main-bg-color;
-  font-family: 'Poppins', sans-serif;
+  background: variables.$main-color;
+  font-family: 'CenturyGothic', sans-serif;
   margin: 0;
-  // overflow: hidden; /* Hide scrollbars */
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: variables.$light-grey-2 variables.$main-color;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: variables.$main-color;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: variables.$light-grey-2;
+  border-radius: 10px;
+  border: 3px solid variables.$main-color;
 }

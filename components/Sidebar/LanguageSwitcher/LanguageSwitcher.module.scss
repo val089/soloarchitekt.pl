@@ -1,0 +1,19 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.switcher {
+  margin-top: 30px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    font-size: 2rem;
+    font-weight: 700;
+    color: variables.$light-grey-3;
+
+    &.active {
+      color: variables.$black;
+    }
+  }
+}

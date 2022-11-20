@@ -1,0 +1,29 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.logo {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_text1 {
+    font-size: 4.4rem;
+    letter-spacing: 17px;
+    line-height: 40px;
+    text-align: center;
+    width: 130px;
+    display: flex;
+  }
+
+  &_text2 {
+    font-size: 3rem;
+    width: 130px;
+  }
+
+  &_line {
+    width: 130px;
+    height: 1px;
+    background-color: variables.$black;
+  }
+}
