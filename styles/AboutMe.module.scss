@@ -1,0 +1,27 @@
+@use './variables';
+@use './mixins';
+
+.aboutMe {
+  padding-top: 60px;
+
+  .article {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+
+    h2 {
+      font-size: 44px;
+    }
+
+    p {
+      margin-top: 60px;
+      font-size: 1.6rem;
+      line-height: 2;
+
+      &::first-letter {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
