@@ -12,7 +12,7 @@
 }
 
 @mixin icon {
-  color: variables.$main-purple-color;
+  // color: variables.$main-purple-color;
   width: 5rem;
   height: 5rem;
 }
@@ -22,7 +22,7 @@
 }
 
 @mixin button {
-  background: variables.$main-purple-color;
+  // background: variables.$main-purple-color;
   border-radius: 5rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   color: #fff;

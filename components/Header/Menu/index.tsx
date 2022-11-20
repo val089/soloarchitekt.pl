@@ -1,7 +1,7 @@
-import { useMediaQuery } from '../../../hooks/useMediaQuery';
+import Link from 'next/link';
 import classes from './Menu.module.scss';
-import { GithubIcon } from '../../../assets/icons/GithubIcon';
-import { LinkedinIcon } from '../../../assets/icons/LinkedinIcon';
+
+import { useMediaQuery } from '../../../hooks/useMediaQuery';
 
 export const linksData = [
   {
@@ -16,10 +16,10 @@ export const linksData = [
     label: 'Portfolio',
     to: '#portfolio-section',
   },
-  // {
-  //   label: 'Contact',
-  //   to: '#contact-section',
-  // },
+  {
+    label: 'Kontakt',
+    to: '/kontakt',
+  },
 ];
 
 type MenuProps = {
@@ -34,31 +34,29 @@ export const Menu = ({ opened }: MenuProps) => {
       <ul className={classes.menu_item_list}>
         {linksData.map((link) => (
           <li className={classes.menu_item} key={link.label}>
-            <a className={`${classes.menu_link} home-section`} href={link.to}>
-              {link.label}
-            </a>
+            <Link href={link.label} />
           </li>
         ))}
-
-        <li className={`${classes.menu_item} ${classes.menu_item_social}`}>
-          <a
-            className={`${classes.menu_link} ${classes.menu_link_social}`}
-            href="https://github.com/val089"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GithubIcon className={classes.menu_icon} />
-          </a>
-          <a
-            className={`${classes.menu_link} ${classes.menu_link_social}`}
-            href="https://www.linkedin.com/in/kamil-szerlag/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedinIcon className={classes.menu_icon} />
-          </a>
-        </li>
       </ul>
     </nav>
   );
 };
+
+// <li className={`${classes.menu_item} ${classes.menu_item_social}`}>
+//   <a
+//     className={`${classes.menu_link} ${classes.menu_link_social}`}
+//     href="https://github.com/val089"
+//     target="_blank"
+//     rel="noopener noreferrer"
+//   >
+//     <GithubIcon className={classes.menu_icon} />
+//   </a>
+//   <a
+//     className={`${classes.menu_link} ${classes.menu_link_social}`}
+//     href="https://www.linkedin.com/in/kamil-szerlag/"
+//     target="_blank"
+//     rel="noopener noreferrer"
+//   >
+//     <LinkedinIcon className={classes.menu_icon} />
+//   </a>
+// </li>;

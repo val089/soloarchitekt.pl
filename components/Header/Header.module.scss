@@ -16,7 +16,7 @@
 
   &_onscroll {
     @include mixins.mq(tablet) {
-      background: variables.$main-bg-color;
+      background: variables.$main-color;
       box-shadow: 1px 1px 10px #000;
       width: 60rem;
       left: 50%;
