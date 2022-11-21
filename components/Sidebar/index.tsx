@@ -29,7 +29,7 @@ export const linksData = [
 
 export const Sidebar = () => {
   const { open, setOpen } = useMenu();
-  const isMobile = useMediaQuery('(max-width: 800px)');
+  const isMobile = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={`${classes.sidebar} ${open ? classes.sidebar_open : ''}`}>
