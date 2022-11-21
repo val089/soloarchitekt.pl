@@ -2,7 +2,7 @@
 @use './mixins';
 
 .home_introSection {
-  height: 100%;
+  height: 100vh;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 40%;
@@ -11,25 +11,30 @@
     'mainText infoText'
     'mainImg mainImg';
 
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'mainText'
-      'infoText'
-      'mainImg';
-    place-items: unset;
-    padding-top: 60px;
+  @include mixins.mq(tablet-large) {
+    display: block;
+    // grid-template-columns: 1fr;
+    // grid-template-areas:
+    //   'mainText'
+    //   'infoText'
+    //   'mainImg';
+    padding-top: 100px;
   }
 }
 
-.home_mainImg {
-  object-fit: cover;
+.home_mainImgContainer {
+  position: absolute;
+  bottom: 0;
   grid-area: mainImg;
+
+  @include mixins.mq(tablet-large) {
+    width: 100%;
+  }
 }
 
 .home_mainText,
 .home_mainInfo {
-  @media (max-width: 1024px) {
+  @include mixins.mq(tablet-large) {
     padding: 0 20px;
   }
 }
@@ -42,17 +47,22 @@
     max-width: 650px;
     line-height: 1.4;
 
-    @media (max-width: 1024px) {
+    @include mixins.mq(tablet-large) {
       font-size: 2.4rem;
     }
   }
 
   h3 {
     font-size: 2rem;
+
+    @include mixins.mq(tablet-large) {
+      font-size: 1.4rem;
+    }
   }
 }
 
 .home_mainInfo {
+  padding-top: 100px;
   grid-area: 'mainInfo';
 }
 
@@ -61,7 +71,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 1024px) {
+  @include mixins.mq(tablet-large) {
     &:first-child {
       padding-bottom: 50px;
     }

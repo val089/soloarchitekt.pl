@@ -4,14 +4,8 @@ type Props = {
 
 export const PencilAndLineIcon = ({ size = 60 }: Props) => {
   return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 60 60"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g clip-path="url(#clip0_14_212)">
+    <svg width={size} height={size} viewBox="0 0 60 60" fill="none">
+      <g clipPath="url(#clip0_14_212)">
         <path
           d="M15 29.0167V45.0001H30.9833L27.65 41.6667H18.3333V32.3501L15 29.0167Z"
           fill="#FB6A46"

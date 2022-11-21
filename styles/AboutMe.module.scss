@@ -2,7 +2,7 @@
 @use './mixins';
 
 .aboutMe {
-  padding-top: 60px;
+  padding: 60px 20px 20px 20px;
 
   .article {
     margin: 0 auto;
@@ -10,13 +10,21 @@
     max-width: 900px;
 
     h2 {
-      font-size: 44px;
+      font-size: 4.4rem;
+
+      @include mixins.mq(tablet-large) {
+        font-size: 2.4rem;
+      }
     }
 
     p {
       margin-top: 60px;
       font-size: 1.6rem;
       line-height: 2;
+
+      @include mixins.mq(tablet-large) {
+        margin-top: 30px;
+      }
 
       &::first-letter {
         font-size: 2.4rem;

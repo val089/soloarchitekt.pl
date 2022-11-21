@@ -9,12 +9,10 @@ type OfferItemProps = {
 
 export const OfferItem = ({ title, description, icon }: OfferItemProps) => {
   return (
-    <div className={classes.offerItem}>
-      <article className={classes.offerItem_content}>
-        <h3 className={classes.offerItem_title}>{title}</h3>
-        <p className={classes.offerItem_description}>{description}</p>
-      </article>
-      {icon}
-    </div>
+    <article className={classes.offerItem}>
+      <h3 className={classes.offerItem_title}>{title}</h3>
+      <p className={classes.offerItem_description}>{description}</p>
+      <div className={classes.offerItem_icon}>{icon}</div>
+    </article>
   );
 };

@@ -15,7 +15,7 @@
   justify-content: space-between;
   z-index: 99999;
 
-  @media (max-width: 1024px) {
+  @include mixins.mq(tablet-large) {
     position: absolute;
     left: -100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
