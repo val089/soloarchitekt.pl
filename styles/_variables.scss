@@ -8,13 +8,13 @@ $black: #000;
 $orange: #fb6a46;
 
 $breakpoints: (
-  smartphone-verysmall: '(min-width: 200px)',
-  smartphone-small: '(min-width: 360px)',
-  smartphone: '(min-width: 460px)',
-  smartphone-large: '(min-width: 640px)',
-  tablet: '(min-width: 800px)',
-  tablet-large: '(min-width: 1024px)',
-  desktop-small: '(min-width: 1280px)',
-  desktop-medium: '(min-width: 1600px)',
-  desktop-large: '(min-width: 1900px)',
+  smartphone-verysmall: '(max-width: 200px)',
+  smartphone-small: '(max-width: 360px)',
+  smartphone: '(max-width: 460px)',
+  smartphone-large: '(max-width: 640px)',
+  tablet: '(max-width: 800px)',
+  tablet-large: '(max-width: 1024px)',
+  desktop-small: '(max-width: 1280px)',
+  desktop-medium: '(max-width: 1600px)',
+  desktop-large: '(max-width: 1900px)',
 );

@@ -3,9 +3,11 @@ import { useMediaQuery } from '../hooks/useMediaQuery';
 
 import { Layout } from '../components/Layout';
 import mainImgDesktop from '../assets/images/img-desktop.jpg';
+import mainImgMobile from '../assets/images/img-mobile.jpg';
 import classes from '../styles/HomePage.module.scss';
 
 const Home = () => {
+  const isMobile = useMediaQuery('(max-width: 1024px)');
   return (
     <Layout>
       <section className={classes.home_introSection}>
@@ -23,7 +25,15 @@ const Home = () => {
             <p>ZAKOŃCZONYCH PROJEKTÓW</p>
           </div>
         </div>
-        <Image src={mainImgDesktop} alt="main image" className={classes.home_mainImg} />
+        {isMobile ? (
+          <div className={classes.home_mainImgContainer}>
+            <Image src={mainImgMobile} alt="main image" className={classes.home_mainImg} />
+          </div>
+        ) : (
+          <div className={classes.home_mainImgContainer}>
+            <Image src={mainImgDesktop} alt="main image" />
+          </div>
+        )}
       </section>
     </Layout>
   );
