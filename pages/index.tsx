@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { useMediaQuery } from '../hooks/useMediaQuery';
+
 import { Layout } from '../components/Layout';
 import mainImgDesktop from '../assets/images/img-desktop.jpg';
 import classes from '../styles/HomePage.module.scss';

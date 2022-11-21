@@ -13,10 +13,8 @@ export const Layout = ({ children }: LayoutProps) => {
     <MenuProvider>
       <div className={classes.layout}>
         <Sidebar />
-        <main className={classes.layout_main}>
-          <MenuOpenButton />
-          {children}
-        </main>
+        <MenuOpenButton />
+        <main className={classes.layout_main}>{children}</main>
       </div>
     </MenuProvider>
   );

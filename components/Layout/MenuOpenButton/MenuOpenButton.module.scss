@@ -1,5 +1,10 @@
 .hamburger {
   position: absolute;
-  left: 50px;
-  top: 20px;
+  padding-left: 16px;
+  top: 10px;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 }

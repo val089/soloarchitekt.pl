@@ -5,12 +5,12 @@
   display: grid;
   grid-template-columns: 330px 1fr;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
+    height: 100vh;
   }
 
   &_main {
     overflow-y: scroll;
-    padding: 0;
   }
 }
