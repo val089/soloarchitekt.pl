@@ -1,3 +1,6 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
 .layout {
   position: relative;
   width: 100%;
@@ -5,7 +8,7 @@
   display: grid;
   grid-template-columns: 330px 1fr;
 
-  @media (max-width: 1024px) {
+  @include mixins.mq(tablet-large) {
     grid-template-columns: 1fr;
     height: 100vh;
   }

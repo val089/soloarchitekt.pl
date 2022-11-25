@@ -15,14 +15,18 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "next": "^13.0.3",
     "node-sass": "^7.0.3",
+    "nodemailer": "^6.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "yup": "^1.0.0-beta.8"
   },
   "devDependencies": {
     "@types/node": "18.7.18",
+    "@types/nodemailer": "^6.4.6",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
     "@types/react-stickynode": "^4.0.0",

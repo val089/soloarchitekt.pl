@@ -13,11 +13,6 @@
 
   @include mixins.mq(tablet-large) {
     display: block;
-    // grid-template-columns: 1fr;
-    // grid-template-areas:
-    //   'mainText'
-    //   'infoText'
-    //   'mainImg';
     padding-top: 100px;
   }
 }
@@ -62,8 +57,11 @@
 }
 
 .home_mainInfo {
-  padding-top: 100px;
   grid-area: 'mainInfo';
+
+  @include mixins.mq(tablet-large) {
+    padding-top: 100px;
+  }
 }
 
 .home_mainInfoItem {
@@ -71,10 +69,8 @@
   align-items: center;
   justify-content: space-between;
 
-  @include mixins.mq(tablet-large) {
-    &:first-child {
-      padding-bottom: 50px;
-    }
+  &:first-child {
+    padding-bottom: 50px;
   }
 
   span {

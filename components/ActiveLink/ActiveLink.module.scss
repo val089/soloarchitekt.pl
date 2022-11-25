@@ -1,0 +1,18 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.link,
+.link_active {
+  font-weight: 700;
+  font-size: 2rem;
+  color: variables.$dark-grey;
+  position: relative;
+
+  &:hover {
+    color: variables.$orange;
+  }
+}
+
+.link_active {
+  color: variables.$orange;
+}
