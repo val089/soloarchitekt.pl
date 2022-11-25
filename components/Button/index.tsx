@@ -1,15 +1,14 @@
-import { ReactNode } from 'react';
+import { ReactNode, ButtonHTMLAttributes } from 'react';
 import classes from './Button.module.scss';
 
-type ButtonProps = {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  type: 'button' | 'submit' | 'reset' | undefined;
-  href?: string;
-};
+  className: string;
+}
 
-export const Button = ({ children, type }: ButtonProps) => {
+export const Button = ({ children, className, ...restProps }: ButtonProps) => {
   return (
-    <button type={type} className={classes.button}>
+    <button className={`${classes.button} ${className}`} {...restProps}>
       {children}
     </button>
   );

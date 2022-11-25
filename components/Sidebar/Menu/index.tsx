@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import classes from './Menu.module.scss';
+import { ActiveLink } from '../../ActiveLink';
 
 import { useMediaQuery } from '../../../hooks/useMediaQuery';
 
@@ -34,9 +35,7 @@ export const Menu = ({ opened }: MenuProps) => {
       <ul className={classes.menu_item_list}>
         {linksData.map((link) => (
           <li className={classes.menu_item} key={link.label}>
-            <Link href={link.to} className={classes.menu_link}>
-              {link.label}
-            </Link>
+            <ActiveLink href={link.to}>{link.label}</ActiveLink>
           </li>
         ))}
       </ul>

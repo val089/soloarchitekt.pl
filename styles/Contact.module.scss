@@ -1,0 +1,104 @@
+@use './variables';
+@use './mixins';
+
+.contact {
+  padding: 60px 20px 100px 20px;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &_content {
+    margin-bottom: 20px;
+  }
+
+  &_title {
+    font-size: 4.4rem;
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 60px;
+
+    @include mixins.mq(tablet-large) {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_formInfoText {
+    font-size: 2rem;
+    margin-bottom: 35px;
+
+    @include mixins.mq(tablet) {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+  }
+
+  &_formInfoText2 {
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
+  &_contact2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'companyInfo contactInfo'
+      'address contactInfo';
+
+    @include mixins.mq(smartphone-large) {
+      gap: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 100px;
+      grid-template-areas:
+        'companyInfo '
+        'address'
+        'contactInfo';
+    }
+  }
+
+  &_companyInfo {
+    grid-area: companyInfo;
+  }
+
+  &_address {
+    grid-area: address;
+    font-size: 1.6rem;
+    font-style: normal;
+    align-self: flex-end;
+  }
+
+  &_contactInfo {
+    grid-area: contactInfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      font-size: 1.6rem;
+    }
+  }
+
+  &_companyName,
+  &_companyName2,
+  &_ceo {
+    font-size: 1.6rem;
+  }
+
+  &_ceo {
+    color: variables.$orange;
+    font-weight: 700;
+  }
+
+  &_icon {
+    margin-right: 20px;
+  }
+}

@@ -7,18 +7,6 @@
     flex-direction: column;
   }
   &_item {
-    padding: 20px 0;
-  }
-
-  &_link {
-    font-weight: 700;
-    font-size: 2rem;
-    color: variables.$dark-grey;
-    position: relative;
-
-    &:hover,
-    &_active {
-      color: variables.$orange;
-    }
+    padding: 15px 0;
   }
 }

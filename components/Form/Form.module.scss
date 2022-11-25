@@ -1,0 +1,58 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  grid-template-areas:
+    'firstName message message'
+    'email message message'
+    'phoneNumber message message'
+    'none none submit';
+
+  @include mixins.mq(tablet) {
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 220px auto;
+    grid-template-areas:
+      'firstName'
+      'email'
+      'phoneNumber'
+      'message'
+      'submit';
+  }
+}
+
+.firstNameInput {
+  grid-area: firstName;
+}
+
+.emailInput {
+  grid-area: email;
+}
+
+.phoneNumberInput {
+  grid-area: phoneNumber;
+}
+
+.messageInput {
+  grid-area: message;
+  height: 100%;
+
+  // @include mixins.mq(tablet) {
+  //   height: 220px;
+  // }
+}
+
+.submitButton {
+  grid-area: submit;
+  font-weight: 700;
+  width: 200px;
+  justify-self: end;
+
+  @include mixins.mq(tablet) {
+    width: 100%;
+  }
+}
