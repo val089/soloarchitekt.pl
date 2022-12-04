@@ -4,6 +4,7 @@ import { useMediaQuery } from '../hooks/useMediaQuery';
 import { Layout } from '../components/Layout';
 import mainImgDesktop from '../assets/images/img-desktop.jpg';
 import mainImgMobile from '../assets/images/img-mobile.jpg';
+import { I18n } from '../translations/I18n';
 import classes from '../styles/HomePage.module.scss';
 
 const Home = () => {
@@ -12,17 +13,25 @@ const Home = () => {
     <Layout>
       <section className={classes.home_introSection}>
         <div className={classes.home_mainText}>
-          <h3>PRACOWNIA ARCHITEKTONICZNA</h3>
-          <h2>Pomagam Tobie Budować Marzenia i Daję Więcej niż oczekujesz</h2>
+          <h3>
+            <I18n id="text.text01" />
+          </h3>
+          <h2>
+            <I18n id="text.text02" />
+          </h2>
         </div>
         <div className={classes.home_mainInfo}>
           <div className={classes.home_mainInfoItem}>
             <span>100%</span>
-            <p>ZADOWOLONYCH KLIENTWÓW</p>
+            <p>
+              <I18n id="text.text03" />
+            </p>
           </div>
           <div className={classes.home_mainInfoItem}>
             <span>200</span>
-            <p>ZAKOŃCZONYCH PROJEKTÓW</p>
+            <p>
+              <I18n id="text.text04" />
+            </p>
           </div>
         </div>
         {isMobile ? (

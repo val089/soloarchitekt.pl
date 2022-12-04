@@ -49,6 +49,7 @@
 
   h3 {
     font-size: 2rem;
+    text-transform: uppercase;
 
     @include mixins.mq(tablet-large) {
       font-size: 1.4rem;
