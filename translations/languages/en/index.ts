@@ -10,6 +10,11 @@ const en = {
   'text.text09': 'Simplicity is the ultimate sophistication',
   'text.text10': 'I know that good design mean that good business',
 
+  'text.text11': 'Website under construction',
+  'text.text12': 'I invite you soon',
+  'text.text13': 'Page not found',
+  'text.text14': 'Go back to the home page',
+
   'menu.text01': 'Home',
   'menu.text02': 'About me',
   'menu.text03': 'Offer',

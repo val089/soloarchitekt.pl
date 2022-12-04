@@ -10,6 +10,11 @@ const pl = {
   'text.text09': 'Prostota jest szczytem wyrafinowania',
   'text.text10': 'Wiem, że dobry design to dobry biznes',
 
+  'text.text11': 'Strona w budowie',
+  'text.text12': 'Zapraszam wkrótce',
+  'text.text13': 'Strona nie została znaleziona',
+  'text.text14': 'Wróć do strony głównej',
+
   'menu.text01': 'Home',
   'menu.text02': 'O mnie',
   'menu.text03': 'Oferta',
