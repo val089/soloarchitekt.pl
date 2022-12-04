@@ -3,23 +3,32 @@ import { Form } from '../components/Form';
 import classes from '../styles/Contact.module.scss';
 import { MailIcon } from '../assets/icons/MailIcon';
 import { PhoneIcon } from '../assets/icons/PhoneIcon';
+import { I18n } from '../translations/I18n';
 
 const Contact = () => {
   return (
     <Layout>
       <section className={classes.contact}>
         <div className={classes.contact_wrapper}>
-          <h2 className={classes.contact_title}>Kontakt</h2>
-          <p className={classes.contact_formInfoText}>Wyślij wiadomość:</p>
+          <h2 className={classes.contact_title}>
+            <I18n id="text.text06" />
+          </h2>
+          <p className={classes.contact_formInfoText}>
+            <I18n id="text.text07" />:
+          </p>
 
           <Form />
 
-          <p className={classes.contact_formInfoText2}>Skontaktuj się ze mną:</p>
+          <p className={classes.contact_formInfoText2}>
+            <I18n id="text.text08" />:
+          </p>
 
           <div className={classes.contact_contact2}>
             <div className={classes.contact_companyInfo}>
               <p className={classes.contact_companyName}>Solo Architekt</p>
-              <p className={classes.contact_companyName2}>pracownia architektoniczna</p>
+              <p className={classes.contact_companyName2}>
+                <I18n id="text.text01" />
+              </p>
               <p className={classes.contact_ceo}>Arkadiusz Tabath</p>
             </div>
 

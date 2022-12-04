@@ -1,4 +1,5 @@
 import { Layout } from '../components/Layout';
+import { I18n } from '../translations/I18n';
 import classes from '../styles/AboutMe.module.scss';
 
 const AboutMe = () => {
@@ -6,7 +7,9 @@ const AboutMe = () => {
     <Layout>
       <section className={classes.aboutMe}>
         <article className={classes.article}>
-          <h2>O mnie</h2>
+          <h2>
+            <I18n id="text.text05" />
+          </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin gravida.

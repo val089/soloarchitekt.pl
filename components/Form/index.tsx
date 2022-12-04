@@ -1,9 +1,11 @@
 import { Formik } from 'formik';
+import { useIntl } from 'react-intl';
 import { Input } from './Input';
 import classes from './Form.module.scss';
 import { Textarea } from './Textarea';
 import { Button } from '../Button';
 import { formSchema } from './formSchema';
+import { I18n } from '../../translations/I18n';
 import { sendContactForm } from '../../lib/api';
 
 const initialValues = {
@@ -14,6 +16,8 @@ const initialValues = {
 };
 
 export const Form = () => {
+  const intl = useIntl();
+
   return (
     <Formik
       initialValues={initialValues}
@@ -26,16 +30,29 @@ export const Form = () => {
     >
       {({ handleSubmit, isSubmitting }) => (
         <form onSubmit={handleSubmit} className={classes.form}>
-          <Input name="firstName" placeholder="Imię" className={classes.firstNameInput} />
-          <Input name="email" type="email" placeholder="Email" className={classes.emailInput} />
-          <Input name="phoneNumber" placeholder="Telefon" className={classes.phoneNumberInput} />
+          <Input
+            name="firstName"
+            placeholder={intl.formatMessage({ id: 'input.text01' })}
+            className={classes.firstNameInput}
+          />
+          <Input
+            name="email"
+            type="email"
+            placeholder={intl.formatMessage({ id: 'input.text02' })}
+            className={classes.emailInput}
+          />
+          <Input
+            name="phoneNumber"
+            placeholder={intl.formatMessage({ id: 'input.text03' })}
+            className={classes.phoneNumberInput}
+          />
           <Textarea
             name="message"
-            placeholder="Treść wiadomości"
+            placeholder={intl.formatMessage({ id: 'input.text04' })}
             className={classes.messageInput}
           />
           <Button type="submit" disabled={isSubmitting} className={classes.submitButton}>
-            Send message
+            <I18n id="text.text07" />
           </Button>
         </form>
       )}

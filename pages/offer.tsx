@@ -3,12 +3,13 @@ import { HomeIcon } from '../assets/icons/HomeIcon';
 import { PencilAndLineIcon } from '../assets/icons/PeniclAndLineIcon';
 import { Layout } from '../components/Layout';
 import { OfferItem } from '../components/OfferItem';
+import { I18n } from '../translations/I18n';
 import classes from '../styles/Offer.module.scss';
 
 const offers = [
   {
     id: 1,
-    title: 'Projektowanie',
+    title: 'Usługa 1',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin gravida. Aliquam etiam erat velit scelerisque',
     icon: <PencilAndLineIcon />,
@@ -35,8 +36,12 @@ const Offer = () => {
       <section className={classes.offer}>
         <div className={classes.offer_wrapper}>
           <article className={classes.offer_content}>
-            <h2 className={classes.offer_mainTitle}>Prostota jest szczytem wyrafinowania</h2>
-            <p className={classes.offer_mainDescription}>Wiem, że dobry design to dobry biznes</p>
+            <h2 className={classes.offer_mainTitle}>
+              <I18n id="text.text09" />
+            </h2>
+            <p className={classes.offer_mainDescription}>
+              <I18n id="text.text10" />
+            </p>
           </article>
 
           {offers.map(({ id, title, description, icon }) => (

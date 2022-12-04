@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useLocale } from '../../../hooks/useLocale';
 import classes from './LanguageSwitcher.module.scss';
 
 export const LanguageSwitcher = () => {
-  const [language, setLanguage] = useState('pl');
+  const { setLocale, locale } = useLocale();
 
   return (
     <div className={classes.switcher}>
-      <button className={language === 'en' ? classes.active : ''} onClick={() => setLanguage('en')}>
+      <button className={locale === 'en' ? classes.active : ''} onClick={() => setLocale('en')}>
         EN
       </button>
-      <button className={language === 'pl' ? classes.active : ''} onClick={() => setLanguage('pl')}>
+      <button className={locale === 'pl' ? classes.active : ''} onClick={() => setLocale('pl')}>
         PL
       </button>
     </div>
