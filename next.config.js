@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: true,
   images: {
-    // formats: ['image/avif', 'image/webp', 'image/png'],
+    formats: ['image/avif', 'image/webp'],
   },
 };
 
