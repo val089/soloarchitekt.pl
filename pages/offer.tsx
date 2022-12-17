@@ -5,32 +5,38 @@ import { Layout } from '../components/Layout';
 import { OfferItem } from '../components/OfferItem';
 import { I18n } from '../translations/I18n';
 import classes from '../styles/Offer.module.scss';
-
-const offers = [
-  {
-    id: 1,
-    title: 'Usługa 1',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin gravida. Aliquam etiam erat velit scelerisque',
-    icon: <PencilAndLineIcon />,
-  },
-  {
-    id: 2,
-    title: 'Usługa 2',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin gravida. Aliquam etiam erat velit scelerisque',
-    icon: <HomeIcon />,
-  },
-  {
-    id: 3,
-    title: 'Usługa 3',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat nibh sed pulvinar proin gravida. Aliquam etiam erat velit scelerisque',
-    icon: <BuildingIcon />,
-  },
-];
+import { useIntl } from 'react-intl';
 
 const Offer = () => {
+  const intl = useIntl();
+
+  const offers = [
+    {
+      id: 1,
+      title: intl.formatMessage({ id: 'title.offer01' }),
+      description: intl.formatMessage({ id: 'text.offer01' }),
+      icon: <PencilAndLineIcon />,
+    },
+    {
+      id: 2,
+      title: intl.formatMessage({ id: 'title.offer02' }),
+      description: intl.formatMessage({ id: 'text.offer02' }),
+      icon: <HomeIcon />,
+    },
+    {
+      id: 3,
+      title: intl.formatMessage({ id: 'title.offer03' }),
+      description: intl.formatMessage({ id: 'text.offer03' }),
+      icon: <BuildingIcon />,
+    },
+    {
+      id: 4,
+      title: intl.formatMessage({ id: 'title.offer04' }),
+      description: intl.formatMessage({ id: 'text.offer04' }),
+      icon: <BuildingIcon />,
+    },
+  ];
+
   return (
     <Layout>
       <section className={classes.offer}>
