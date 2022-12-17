@@ -13,12 +13,13 @@ const Home = () => {
     <Layout>
       <section className={classes.home_introSection}>
         <div className={classes.home_mainText}>
-          <h3>
-            <I18n id="text.text01" />
-          </h3>
-          <h2>
-            <I18n id="text.text02" />
-          </h2>
+          <figure className={classes.home_quote}>
+            <blockquote>
+              &quot; <I18n id="text.quote" />
+              &quot;
+            </blockquote>
+            <figcaption>Frank Lloyd Wright</figcaption>
+          </figure>
         </div>
         <div className={classes.home_mainInfo}>
           <div className={classes.home_mainInfoItem}>
