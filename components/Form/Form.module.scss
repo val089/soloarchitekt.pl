@@ -2,6 +2,7 @@
 @use '../../styles/mixins';
 
 .form {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -40,10 +41,6 @@
 .messageInput {
   grid-area: message;
   height: 100%;
-
-  // @include mixins.mq(tablet) {
-  //   height: 220px;
-  // }
 }
 
 .submitButton {
@@ -55,4 +52,10 @@
   @include mixins.mq(tablet) {
     width: 100%;
   }
+}
+
+.successMessage {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+  color: variables.$success;
 }

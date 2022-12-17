@@ -24,6 +24,10 @@ const en = {
   'input.text02': 'Email',
   'input.text03': 'Phone',
   'input.text04': 'Message',
+
+  'input.error01': 'Please enter a valid email',
+  'input.error02': 'Fill the field',
+  'input.error03': 'Fill the field - e.g. +48XXXXXXXXX',
 };
 
 export default en;

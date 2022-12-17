@@ -32,8 +32,13 @@ const handler = async (req: ExtendedNextApiRequest, res: NextApiResponse<Message
       await transporter.sendMail({
         ...mailOptions,
         subject: 'Email z soloarchitekt.pl',
-        text: 'This is a test string',
-        html: '<h1>Test</h1><p>TEXT</p>',
+        html: `
+        <h1>Email z soloarchitekt.pl</h1>
+        <p><strong>Imię:</strong> ${data.firstName}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Tel:</strong> ${data.phoneNumber}</p>
+        <p><strong>Wiadomość:</strong> ${data.message}</p>
+        `,
       });
 
       return res.status(200).json({ success: true });
