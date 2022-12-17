@@ -10,7 +10,7 @@ type LayoutProps = {
 };
 
 export const Layout = ({ children }: LayoutProps) => {
-  const isUnderConstruction = true;
+  const isUnderConstruction = false;
 
   return isUnderConstruction ? (
     <UnderConstruction />

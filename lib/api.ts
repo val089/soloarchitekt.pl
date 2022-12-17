@@ -1,4 +1,9 @@
-import { FormValuesType } from '../components/Form/formSchema';
+interface FormValuesType {
+  firstName: string;
+  email: string;
+  phoneNumber: string;
+  message: string;
+}
 
 export const sendContactForm = async (data: FormValuesType) =>
   fetch('/api/contact', {
