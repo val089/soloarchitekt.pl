@@ -24,6 +24,10 @@ const pl = {
   'input.text02': 'Email',
   'input.text03': 'Telefon',
   'input.text04': 'Treść wiadomości',
+
+  'input.error01': 'Podaj prawidłowy email',
+  'input.error02': 'Uzupełnij pole',
+  'input.error03': 'Uzupełnij pole - np. +48XXXXXXXXX',
 };
 
 export default pl;

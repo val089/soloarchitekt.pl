@@ -6,10 +6,22 @@ export const LanguageSwitcher = () => {
 
   return (
     <div className={classes.switcher}>
-      <button className={locale === 'en' ? classes.active : ''} onClick={() => setLocale('en')}>
+      <button
+        className={locale === 'en' ? classes.active : ''}
+        onClick={() => {
+          localStorage.setItem('locale', 'en');
+          setLocale('en');
+        }}
+      >
         EN
       </button>
-      <button className={locale === 'pl' ? classes.active : ''} onClick={() => setLocale('pl')}>
+      <button
+        className={locale === 'pl' ? classes.active : ''}
+        onClick={() => {
+          localStorage.setItem('locale', 'pl');
+          setLocale('pl');
+        }}
+      >
         PL
       </button>
     </div>
