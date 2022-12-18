@@ -13,7 +13,7 @@
 
   @include mixins.mq(tablet-large) {
     display: block;
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
@@ -36,32 +36,13 @@
 
 .home_mainText {
   grid-area: mainText;
-
-  // h2 {
-  //   font-size: 4.4rem;
-  //   max-width: 650px;
-  //   line-height: 1.4;
-
-  //   @include mixins.mq(tablet-large) {
-  //     font-size: 2.4rem;
-  //   }
-  // }
-
-  // h3 {
-  //   font-size: 2rem;
-  //   text-transform: uppercase;
-
-  //   @include mixins.mq(tablet-large) {
-  //     font-size: 1.4rem;
-  //   }
-  // }
 }
 
 .home_mainInfo {
   grid-area: 'mainInfo';
 
   @include mixins.mq(tablet-large) {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
@@ -77,6 +58,10 @@
   span {
     font-size: 4.4rem;
     color: variables.$light-grey-2;
+
+    @include mixins.mq(tablet-large) {
+      font-size: 2rem;
+    }
   }
 
   p {
@@ -94,6 +79,12 @@
     font-style: italic;
     font-weight: 400;
     line-height: 1.5;
+
+    @include mixins.mq(tablet-large) {
+      font-size: 1.4rem;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   figcaption {
@@ -101,5 +92,10 @@
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
+
+    @include mixins.mq(tablet-large) {
+      padding-top: 10px;
+      font-size: 1.2rem;
+    }
   }
 }
