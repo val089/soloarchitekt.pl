@@ -36,6 +36,10 @@
 
 .home_mainText {
   grid-area: mainText;
+
+  @include mixins.mq(tablet-large) {
+    padding-top: 50px;
+  }
 }
 
 .home_mainInfo {
@@ -60,7 +64,7 @@
     color: variables.$light-grey-2;
 
     @include mixins.mq(tablet-large) {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 
@@ -81,7 +85,7 @@
     line-height: 1.5;
 
     @include mixins.mq(tablet-large) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin: 0;
       padding: 0;
     }
@@ -89,13 +93,13 @@
 
   figcaption {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
 
     @include mixins.mq(tablet-large) {
-      padding-top: 10px;
-      font-size: 1.2rem;
+      padding-top: 20px;
+      font-size: 1.3rem;
     }
   }
 }
