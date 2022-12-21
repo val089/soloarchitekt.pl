@@ -10,7 +10,6 @@
 
   @include mixins.mq(tablet-large) {
     grid-template-columns: 1fr;
-    height: 100vh;
   }
 
   &_main {
