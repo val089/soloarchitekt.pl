@@ -37,11 +37,11 @@ const Home = () => {
         </div>
         {isMobile ? (
           <div className={classes.home_mainImgContainer}>
-            <Image src={mainImgMobile} alt="main image" className={classes.home_mainImg} />
+            <Image src={mainImgMobile} alt="main image" className={classes.home_mainImg} priority />
           </div>
         ) : (
           <div className={classes.home_mainImgContainer}>
-            <Image src={mainImgDesktop} alt="main image" />
+            <Image src={mainImgDesktop} alt="main image" priority />
           </div>
         )}
       </section>
