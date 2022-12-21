@@ -46,9 +46,13 @@ export const Layout = ({ children }: LayoutProps) => {
             images: [
               {
                 url: '../../assets/images/img-desktop.jpg',
+                type: 'image/jpeg',
+                alt: 'architectural image',
               },
               {
                 url: '../../assets/images/img-mobile.jpg',
+                type: 'image/jpeg',
+                alt: 'architectural image',
               },
             ],
             siteName: 'Solo Architekt',
