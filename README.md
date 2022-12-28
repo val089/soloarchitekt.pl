@@ -28,7 +28,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## How to run (dev mode)
 
-1. `yarn dev`
+1. `yarn dev or npm dev`
 
 Runs the app in the development mode.
 
