@@ -10,7 +10,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.# Solo Architekt
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ![soloarchitekt](https://user-images.githubusercontent.com/30775271/209812829-f92688e7-a41f-46c9-809d-d4edf1e77d6d.JPG)
 
