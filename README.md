@@ -16,16 +16,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Technologies
 
-- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Formik](https://formik.org/)
-- [React Router Dom](https://reactrouter.com/)
-- [Redux Tool kit](https://redux-toolkit.js.org/)
 - [React Intl](https://formatjs.io/docs/getting-started/installation/)
+- [Vercel](https://vercel.com/)
 
 ## Installation
 1. Clone this repo.
-2. `yarn`
+2. `yarn or npm`
 
 ## How to run (dev mode)
 
