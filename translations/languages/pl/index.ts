@@ -46,7 +46,7 @@ const pl = {
     'Współpraca z biurami zewnętrznymi - pomoc w opracowywaniu dokumentacji. Modelowanie architektury, konstrukcji wraz z instalacjami z rysunków płaskich do 3D - BIM.',
 
   'text.aboutMe01':
-    'Solo Architekt to pracownia architektoniczna, którą stworzyłem z wrażliwości do oryginalności a jednocześnie funkcjonalności przestrzennej, celem szeroko pojętego tworzenia projektów budynków mieszkalnych i usługowych.',
+    'to pracownia architektoniczna, którą stworzyłem z wrażliwości do oryginalności a jednocześnie funkcjonalności przestrzennej, celem szeroko pojętego tworzenia projektów budynków mieszkalnych i usługowych.',
 
   'text.aboutMe02':
     'Ukończyłem studia architektoniczne na Wydziale Architektury i Budownictwa na Uniwersytecie Technologiczno-Przyrodniczym w Bydgoszczy.',

@@ -15,22 +15,12 @@
   }
 
   &_mainTitle {
-    font-size: 4.4rem;
     max-width: 480px;
     width: 100%;
-
-    @include mixins.mq(tablet-large) {
-      font-size: 2.4rem;
-    }
   }
 
   &_mainDescription {
-    margin-top: 20px;
-    font-size: 2rem;
-
-    @include mixins.mq(tablet-large) {
-      margin-top: 30px;
-      font-size: 1.6rem;
-    }
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 }

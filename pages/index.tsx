@@ -21,20 +21,6 @@ const Home = () => {
             <figcaption>Frank Lloyd Wright</figcaption>
           </figure>
         </div>
-        <div className={classes.home_mainInfo}>
-          <div className={classes.home_mainInfoItem}>
-            <span>100%</span>
-            <p>
-              <I18n id="text.text03" />
-            </p>
-          </div>
-          <div className={classes.home_mainInfoItem}>
-            <span>200</span>
-            <p>
-              <I18n id="text.text04" />
-            </p>
-          </div>
-        </div>
         {isMobile ? (
           <div className={classes.home_mainImgContainer}>
             <Image src={mainImgMobile} alt="main image" className={classes.home_mainImg} priority />

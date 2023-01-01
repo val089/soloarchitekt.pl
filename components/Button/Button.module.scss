@@ -2,7 +2,7 @@
 @use '../../styles/mixins';
 
 .button {
-  height: 60px;
+  padding: 10px 30px;
   background-color: variables.$orange;
   color: variables.$main-color;
   font-size: 1.6rem;

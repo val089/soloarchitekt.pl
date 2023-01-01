@@ -1,18 +1,21 @@
-import { ReactElement } from 'react';
+import Image, { StaticImageData } from 'next/image';
 import classes from './OfferItem.module.scss';
+import { Title } from '../Title';
 
 type OfferItemProps = {
   title: string;
   description: string;
-  icon: ReactElement;
+  icon: StaticImageData;
 };
 
 export const OfferItem = ({ title, description, icon }: OfferItemProps) => {
   return (
     <article className={classes.offerItem}>
-      <h3 className={classes.offerItem_title}>{title}</h3>
+      <Title title={title} className={classes.offerItem_title} />
       <p className={classes.offerItem_description}>{description}</p>
-      <div className={classes.offerItem_icon}>{icon}</div>
+      <div className={classes.offerItem_icon}>
+        <Image src={icon} alt={title} priority width={60} />
+      </div>
     </article>
   );
 };
