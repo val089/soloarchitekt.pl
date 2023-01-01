@@ -8,11 +8,11 @@
   grid-template-columns: 1fr 40%;
   grid-template-rows: 1fr 382px;
   grid-template-areas:
-    'mainText infoText'
+    'mainText mainText'
     'mainImg mainImg';
 
   @include mixins.mq(tablet-large) {
-    display: block;
+    grid-template-rows: 1fr 190px;
     padding-top: 50px;
   }
 }
@@ -27,56 +27,17 @@
   }
 }
 
-.home_mainText,
-.home_mainInfo {
-  @include mixins.mq(tablet-large) {
-    padding: 0 20px;
-  }
-}
-
 .home_mainText {
   grid-area: mainText;
-
   @include mixins.mq(tablet-large) {
+    padding: 0 20px;
     padding-top: 50px;
-  }
-}
-
-.home_mainInfo {
-  grid-area: 'mainInfo';
-
-  @include mixins.mq(tablet-large) {
-    padding-top: 50px;
-  }
-}
-
-.home_mainInfoItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  &:first-child {
-    padding-bottom: 50px;
-  }
-
-  span {
-    font-size: 4.4rem;
-    color: variables.$light-grey-2;
-
-    @include mixins.mq(tablet-large) {
-      font-size: 3rem;
-    }
-  }
-
-  p {
-    padding-left: 30px;
-    font-size: 1.4rem;
   }
 }
 
 .home_quote {
-  justify-content: center;
-  align-items: center;
+  max-width: 800px;
+  align-self: end;
   blockquote {
     padding: 10px;
     font-size: 1.8rem;

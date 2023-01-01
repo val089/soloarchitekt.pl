@@ -4,15 +4,19 @@ import classes from '../styles/Contact.module.scss';
 import { MailIcon } from '../assets/icons/MailIcon';
 import { PhoneIcon } from '../assets/icons/PhoneIcon';
 import { I18n } from '../translations/I18n';
+import { Title } from '../components/Title';
+import { useIntl } from 'react-intl';
 
 const Contact = () => {
+  const intl = useIntl();
   return (
     <Layout>
       <section className={classes.contact}>
         <div className={classes.contact_wrapper}>
-          <h2 className={classes.contact_title}>
-            <I18n id="text.text06" />
-          </h2>
+          <Title
+            className={classes.contact_title}
+            title={intl.formatMessage({ id: 'text.text06' })}
+          />
           <p className={classes.contact_formInfoText}>
             <I18n id="text.text07" />:
           </p>
