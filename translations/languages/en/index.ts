@@ -46,7 +46,7 @@ const en = {
     'Cooperation with external offices - assistance in the development of documentation. Modeling of architecture, constructions with installations from flat drawings to 3D - BIM.',
 
   'text.aboutMe01':
-    'Solo Architekt is an architectural studio that I created out of sensitivity to originality and spatial functionality at the same time, for the purpose of broadly understood design of residential and service buildings.',
+    'is an architectural studio that I created out of sensitivity to originality and spatial functionality at the same time, for the purpose of broadly understood design of residential and service buildings.',
 
   'text.aboutMe02':
     'I graduated from architecture studies at the Faculty of Architecture and Construction at the University of Technology and Life Sciences in Bydgoszcz.',

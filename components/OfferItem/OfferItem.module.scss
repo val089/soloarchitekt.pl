@@ -26,17 +26,11 @@
   }
 
   &_title {
-    font-size: 4rem;
     margin: auto 0;
     grid-area: title;
-
-    @include mixins.mq(tablet-large) {
-      font-size: 2rem;
-    }
   }
 
   &_description {
-    font-size: 1.6rem;
     color: variables.$dark-grey;
     grid-area: desc;
   }
