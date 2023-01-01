@@ -6,6 +6,7 @@ import { OfferItem } from '../components/OfferItem';
 import { I18n } from '../translations/I18n';
 import classes from '../styles/Offer.module.scss';
 import { useIntl } from 'react-intl';
+import { Title } from '../components/Title';
 
 const Offer = () => {
   const intl = useIntl();
@@ -42,9 +43,10 @@ const Offer = () => {
       <section className={classes.offer}>
         <div className={classes.offer_wrapper}>
           <article className={classes.offer_content}>
-            <h2 className={classes.offer_mainTitle}>
-              <I18n id="text.text09" />
-            </h2>
+            <Title
+              className={classes.offer_mainTitle}
+              title={intl.formatMessage({ id: 'text.text09' })}
+            />
             <p className={classes.offer_mainDescription}>
               <I18n id="text.text10" />
             </p>
