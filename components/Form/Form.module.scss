@@ -46,7 +46,6 @@
 .submitButton {
   grid-area: submit;
   font-weight: 700;
-  width: 200px;
   justify-self: end;
 
   @include mixins.mq(tablet) {

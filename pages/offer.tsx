@@ -1,6 +1,3 @@
-import { BuildingIcon } from '../assets/icons/BuildingIcon';
-import { HomeIcon } from '../assets/icons/HomeIcon';
-import { PencilAndLineIcon } from '../assets/icons/PeniclAndLineIcon';
 import { Layout } from '../components/Layout';
 import { OfferItem } from '../components/OfferItem';
 import { I18n } from '../translations/I18n';

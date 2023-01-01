@@ -15,23 +15,19 @@
   }
 
   &_title {
-    font-size: 4.4rem;
     max-width: 480px;
     width: 100%;
     margin-bottom: 60px;
 
     @include mixins.mq(tablet-large) {
-      font-size: 2.4rem;
       margin-bottom: 20px;
     }
   }
 
   &_formInfoText {
-    font-size: 2rem;
     margin-bottom: 35px;
 
     @include mixins.mq(tablet) {
-      font-size: 1.6rem;
       margin-bottom: 16px;
     }
   }
