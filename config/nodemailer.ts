@@ -6,9 +6,9 @@ const pass = process.env.EMAIL_PASS;
 export const transporter = nodemailer.createTransport({
   pool: true,
   service: 'Godaddy',
-  host: 'smtp.secureserver.net',
-  port: 465,
-  secure: false,
+  // host: 'smtp.secureserver.net',
+  port: 587,
+  // secure: false,
   auth: {
     user: email,
     pass,

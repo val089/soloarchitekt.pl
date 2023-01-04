@@ -20,8 +20,6 @@ interface ExtendedNextApiRequest extends NextApiRequest {
 }
 
 const handler = async (req: ExtendedNextApiRequest, res: NextApiResponse<Message | Success>) => {
-  // console.log(req.body);
-
   if (req.method === 'POST') {
     const data = req.body;
     if (!data.firstName || !data.email || !data.phoneNumber || !data.message) {
@@ -43,8 +41,6 @@ const handler = async (req: ExtendedNextApiRequest, res: NextApiResponse<Message
 
       return res.status(200).send({ success: true });
     } catch (error) {
-      console.log(error);
-      // return res.status(400).json({ message: error.message });
       return res.status(400).send({ message: 'Something went wrong while sending an email. ' });
     }
   }
