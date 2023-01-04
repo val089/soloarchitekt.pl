@@ -19,24 +19,33 @@ const initialValues = {
 
 export const Form = () => {
   const [successMessage, setSuccessMessage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
   const intl = useIntl();
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setSuccessMessage(false);
+      setErrorMessage(false);
     }, 3000);
     return () => clearTimeout(timer);
-  }, [successMessage]);
+  }, [successMessage, errorMessage]);
 
-  // Form
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
-        await sendContactForm(values);
+        try {
+          const res = await sendContactForm(values);
+          if (res.status === 200) {
+            setSuccessMessage(true);
+            resetForm();
+          } else {
+            setErrorMessage(true);
+          }
+        } catch (error) {
+          setErrorMessage(true);
+        }
         setSubmitting(false);
-        resetForm();
-        setSuccessMessage(true);
       }}
       validationSchema={yup
         .object({
@@ -65,7 +74,12 @@ export const Form = () => {
     >
       {({ handleSubmit, isSubmitting }) => (
         <>
-          {successMessage && <p className={classes.successMessage}>Wiadomość została wysłana.</p>}
+          {successMessage && (
+            <p className={classes.successMessage}>{intl.formatMessage({ id: 'text.error01' })}</p>
+          )}
+          {errorMessage && (
+            <p className={classes.errorMessage}>{intl.formatMessage({ id: 'text.error02' })}</p>
+          )}
           <form onSubmit={handleSubmit} className={classes.form}>
             <Input
               name="firstName"
