@@ -33,7 +33,7 @@ const handler = async (req: ExtendedNextApiRequest, res: NextApiResponse<Message
         ...mailOptions,
         subject: 'Email z soloarchitekt.pl',
         html: `
-        <h1>Email z soloarchitekt.pl</h1>
+        <h3>e-mail z soloarchitekt.pl</h3>
         <p><strong>Imię:</strong> ${data.firstName}</p>
         <p><strong>Email:</strong> ${data.email}</p>
         <p><strong>Tel:</strong> ${data.phoneNumber}</p>
