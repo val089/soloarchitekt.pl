@@ -4,7 +4,11 @@ const email = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  pool: true,
+  service: 'Godaddy',
+  host: 'smtp.secureserver.net',
+  port: 465,
+  secure: false,
   auth: {
     user: email,
     pass,
@@ -12,6 +16,6 @@ export const transporter = nodemailer.createTransport({
 });
 
 export const mailOptions = {
-  from: email,
-  to: 'arkadiusz.tabath@gmail.com',
+  from: 'kontakt@soloarchitekt.pl',
+  to: 'kontakt@soloarchitekt.pl',
 };
