@@ -53,8 +53,16 @@
   }
 }
 
-.successMessage {
+.successMessage,
+.errorMessage {
   font-size: 1.6rem;
   padding-bottom: 20px;
+}
+
+.successMessage {
   color: variables.$success;
+}
+
+.errorMessage {
+  color: variables.$error-red;
 }
