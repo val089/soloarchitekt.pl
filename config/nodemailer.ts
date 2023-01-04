@@ -8,7 +8,12 @@ export const transporter = nodemailer.createTransport({
   service: 'Godaddy',
   host: 'smtpout.secureserver.net',
   port: 587,
-  secure: false,
+  secure: true,
+  tls: {
+    ciphers: 'SSLv3',
+  },
+  requireTLS: true,
+  debug: true,
   auth: {
     user: email,
     pass,
