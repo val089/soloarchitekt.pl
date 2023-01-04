@@ -15,6 +15,9 @@ const pl = {
   'text.text13': 'Strona nie została znaleziona',
   'text.text14': 'Wróć do strony głównej',
 
+  'text.error01': 'Wiadomość została wysłana.',
+  'text.error02': 'Wystąpił błąd. Spróbuj ponownie.',
+
   'menu.text01': 'Home',
   'menu.text02': 'O mnie',
   'menu.text03': 'Oferta',

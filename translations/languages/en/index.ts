@@ -15,6 +15,9 @@ const en = {
   'text.text13': 'Page not found',
   'text.text14': 'Go back to the home page',
 
+  'text.error01': 'Message was sent.',
+  'text.error02': 'Error has been occurred. Try again.',
+
   'menu.text01': 'Home',
   'menu.text02': 'About me',
   'menu.text03': 'Offer',
