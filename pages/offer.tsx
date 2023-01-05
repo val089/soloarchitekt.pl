@@ -17,19 +17,19 @@ const Offer = () => {
       id: 1,
       title: intl.formatMessage({ id: 'title.offer01' }),
       description: intl.formatMessage({ id: 'text.offer01' }),
-      icon: OfferIcon2,
+      icon: OfferIcon1,
     },
     {
       id: 2,
       title: intl.formatMessage({ id: 'title.offer02' }),
       description: intl.formatMessage({ id: 'text.offer02' }),
-      icon: OfferIcon1,
+      icon: OfferIcon4,
     },
     {
       id: 3,
       title: intl.formatMessage({ id: 'title.offer03' }),
       description: intl.formatMessage({ id: 'text.offer03' }),
-      icon: OfferIcon4,
+      icon: OfferIcon2,
     },
     {
       id: 4,
